@@ -23,7 +23,7 @@ function App() {
       setLoading(true);
       setError("");
       // console.log("Sending query:", `${process.env.REACT_APP_API_URL}/query`);
-      const res = await axios.post("http://localhost/api/query", { query });
+      const res = await axios.post("/api/query", { query });
 
       if (res.data.error) throw new Error(res.data.error);
 
