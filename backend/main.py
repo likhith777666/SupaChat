@@ -24,7 +24,7 @@ class QueryRequest(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "okkk"}
 
 @app.post("/query")
 def query_data(req: QueryRequest):
