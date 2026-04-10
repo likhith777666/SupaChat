@@ -134,7 +134,7 @@ Error handling & loading states
 Production-ready DevOps pipeline
 🎥 Demo
 
-[👉 [Add your demo video link here]](https://screenrec.com/share/1PVqBW5CpR)
+[👉 [Demo]](https://screenrec.com/share/1PVqBW5CpR)
 
 📂 Project Structure
 supachat/
