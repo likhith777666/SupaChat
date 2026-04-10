@@ -6,6 +6,8 @@ from mcp import validate_sql
 from formatter import format_response
 from fastapi.middleware.cors import CORSMiddleware
 from mcptranslator import translate_query
+from prometheus_fastapi_instrumentator import Instrumentator
+
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -15,6 +17,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+Instrumentator().instrument(app).expose(app)
 class QueryRequest(BaseModel):
     query: str
 
